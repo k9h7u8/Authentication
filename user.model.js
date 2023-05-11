@@ -18,6 +18,15 @@ const userSchema = new mongoose.Schema({
         required: true,
         minlength: 8
     },
+    height: {
+        type: String,
+    },
+    weight: {
+        type: String,
+    },
+    age: {
+        type: Number,
+    },
     createdAt: {
         type: Date,
         default: Date.now

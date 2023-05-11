@@ -13,7 +13,10 @@ const register = async (req, res, next) => {
     const userDetails = {
         name: req.body.name,
         email: req.body.email,
-        password: secPass
+        password: secPass,
+        height: req.body.height,
+        weight: req.body.weight,
+        age: req.body.age
     }
     // console.log(userDetails)
     const userObject = await User.create(userDetails).then((data) => {
